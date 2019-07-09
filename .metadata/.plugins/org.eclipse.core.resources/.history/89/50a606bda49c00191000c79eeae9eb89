@@ -1,0 +1,36 @@
+package pruebas;
+
+public class Main {
+	
+	public static void main(String[] args) { 	// Este método es el punto de inicio de toda aplicación JSE 	(atajo: "main" ctrl+space)
+		System.out.println("Hello World");		// Equivalente al console.log() 								(atajo: "sysout" ctrl+space)
+		
+		int a=5;								// Sustituir dos variables
+		int b=7;
+		int c;
+		
+		System.out.println("a=" + a);			
+		System.out.println("b=" + b);
+		
+		c=a;
+		a=b;
+		b=c;
+		
+		System.out.println("a=" + a);
+		System.out.println("b=" + b);
+		
+		System.out.println(7+2);				// Operadores aritméticos
+		System.out.println(7-2);
+		System.out.println(7*2);
+		System.out.println(7/2);
+		System.out.println(7%2);
+		
+		System.out.println(7>2);				// Operadores booleanos
+		System.out.println(7<2);
+		System.out.println(7>=2);
+		System.out.println(7<=2);
+		System.out.println(7==2);
+		System.out.println(7!=2);
+	}
+	
+}

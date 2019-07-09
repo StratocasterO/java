@@ -1,0 +1,9 @@
+package herencia;
+
+public class Persona {
+	static int numInstancias = 0;
+	
+	Persona(){
+		numInstancias ++;
+	}
+}

@@ -1,0 +1,63 @@
+package pruebas;
+
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) { 	// Este método es el punto de inicio de toda aplicación JSE 	(atajo: "main" ctrl+space)
+		System.out.println("Hello World");		// Equivalente al console.log() 								(atajo: "sysout" ctrl+space)
+		
+		int a=5;								// Sustituir dos variables
+		int b=7;
+		int c;
+		
+		System.out.println("a=" + a);			
+		System.out.println("b=" + b);
+		
+		c=a;
+		a=b;
+		b=c;
+		
+		System.out.println("a=" + a);
+		System.out.println("b=" + b);
+		
+		System.out.println(7+2);				// Operadores aritméticos
+		System.out.println(7-2);
+		System.out.println(7*2);
+		System.out.println(7f/2);
+		System.out.println(7%2);
+		
+		System.out.println(7>2);				// Operadores booleanos
+		System.out.println(7<2);
+		System.out.println(7>=2);
+		System.out.println(7<=2);
+		System.out.println(7==2);
+		System.out.println(7!=2);
+		
+		Scanner lector = new Scanner(System.in);									// Leer valores por la consola
+		System.out.println("Introduzca un texto, por favor: ");
+		String variable = lector.next();
+		System.out.println("Lectura utilizando la clase Scanner: " + variable);
+		
+		if(a>b){System.out.println("a es mayor que b");}							// Condicional
+		else{System.out.println("b es mayor que a");}
+				
+		String resultado = (a>b)?"a es mayor que b (ternario)":"b es mayor que a (ternario)";				// Condicional con operador ternario
+		System.out.println(resultado);
+		
+		String cadena1 = new String("Hola");
+		String cadena2 = new String("Hola");
+		String cadena3 = "Adios";
+		String cadena4 = "Adios";
+		if (cadena1.equals(cadena2)){
+		   System.out.println("Son iguales usando el equals");
+		}
+		if (cadena1==cadena2){
+		   System.out.println("Son iguales usando el ==");
+		}
+		if (cadena3==cadena4){
+		   System.out.println("Son iguales usando el = cuando la cadena es creada en un pool");
+		}
+	}
+	
+}

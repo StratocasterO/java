@@ -1,0 +1,11 @@
+package animales;
+
+public class Main {
+	public static void main(String[] args) {
+		Gato gato = new Gato("miau");
+		Perro perro = new Perro("guauguau");
+		Vaca vaca = new Vaca("muuuuuu");
+		
+		System.out.println(Animales.sonidoMasLargo);
+	}
+}

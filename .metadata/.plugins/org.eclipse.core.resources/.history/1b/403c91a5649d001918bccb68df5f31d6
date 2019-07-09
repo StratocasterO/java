@@ -1,0 +1,16 @@
+package animales;
+
+public class Animales {
+	
+	static String sonidoMasLargo;
+	
+	String sonido;
+	
+	Animales(String sonido){
+		
+	}
+	
+	private void compararSonido() {
+		if (sonido.length() > sonidoMasLargo.length()) sonidoMasLargo = sonido;
+	}
+}

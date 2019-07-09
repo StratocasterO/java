@@ -1,0 +1,9 @@
+package pruebas;
+
+public class Main {
+	
+	public static void main(String[] args) { // Este método es el punto de inicio de toda aplicación JSE
+		System.out.println("Hola");
+	}
+	
+}

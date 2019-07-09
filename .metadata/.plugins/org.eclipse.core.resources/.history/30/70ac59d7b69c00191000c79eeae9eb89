@@ -1,0 +1,27 @@
+package pruebas;
+
+import java.util.Scanner;
+
+public class Metodos {
+	
+	public static void main(String[] args) {
+		Scanner lector = new Scanner(System.in);
+		System.out.println("Introduce el radio: ");
+		int radio = lector.nextInt();
+		
+		Metodos main = new Metodos();
+		main.calculaPerimetroCirca(radio);
+		main.calculaAreaCirca(radio);
+	}
+
+	public void calculaPerimetroCirca(int radio) {
+		double r = 2*Math.PI*radio;
+		System.out.println("El Area del triángulo es: " + r);
+	}
+	
+	public void calculaAreaCirca(int radio) {
+		double r = Math.PI*radio*radio;
+		System.out.println("El área de la circa es: " + r);
+	}
+	
+}

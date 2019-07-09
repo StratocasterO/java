@@ -1,0 +1,13 @@
+package herencia;
+
+public class Main {
+	public static void main(String[] args) {
+		Persona todos = new Persona();
+		Cliente Alice = new Cliente();
+		Cliente Bob = new Cliente();
+		Empleado Charlie = new Empleado();
+		Empleado Duncan = new Empleado();
+		
+		System.out.println(todos.numInstancias);
+	}
+}
